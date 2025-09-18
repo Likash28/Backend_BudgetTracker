@@ -9,8 +9,8 @@ psycopg2-binary==2.9.9
 # Environment and configuration
 python-dotenv==1.0.0
 
-# Data validation and serialization
-pydantic[email]==2.5.0
+# Data validation and serialization - using pre-compiled version
+pydantic[email]==2.4.2
 
 # Authentication and security
 python-jose[cryptography]==3.3.0
