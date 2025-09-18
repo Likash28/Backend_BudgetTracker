@@ -1,0 +1,8 @@
+{
+  "name": "backend-budget-tracker",
+  "version": "1.0.0",
+  "description": "Backend Budget Tracker API",
+  "devDependencies": {
+    "@netlify/plugin-python": "^1.0.0"
+  }
+}
