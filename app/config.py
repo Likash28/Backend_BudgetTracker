@@ -17,8 +17,8 @@ class Settings:
     API_PORT: int = int(os.getenv("API_PORT", "8000"))
     DEBUG: bool = os.getenv("DEBUG", "1") == "1"
     
-    # Database URL for SQLAlchemy with asyncpg
-    DATABASE_URL: str = os.getenv("DATABASE_URL", f"postgresql+asyncpg://{user}:{password}@{host}:{port}/{dbname}")
+    # Database URL for SQLAlchemy
+    DATABASE_URL: str = os.getenv("DATABASE_URL", f"postgresql://{user}:{password}@{host}:{port}/{dbname}")
     class Config:
         env_file = ".env"
         extra = "ignore"  # Optional: ignore any extra env variables

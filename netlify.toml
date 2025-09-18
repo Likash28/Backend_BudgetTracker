@@ -1,0 +1,18 @@
+[build]
+  command = "pip install -r requirements.txt && python -m uvicorn app.main:app --host 0.0.0.0 --port $PORT"
+  publish = "."
+
+[build.environment]
+  PYTHON_VERSION = "3.11"
+  PIP_CACHE_DIR = "/opt/buildhome/.cache/pip"
+
+[[plugins]]
+  package = "@netlify/plugin-python"
+
+[functions]
+  directory = "functions"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
