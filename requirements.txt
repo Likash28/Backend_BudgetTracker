@@ -1,23 +1,10 @@
-# FastAPI and ASGI server
-fastapi==0.104.1
-uvicorn[standard]==0.24.0
-
-# Database
-sqlalchemy==2.0.23
+fastapi==0.110.3
+uvicorn[standard]==0.30.6
+sqlalchemy==2.0.35
 asyncpg==0.29.0
-
-# Environment and configuration
-python-dotenv==1.0.0
-
-# Data validation and serialization - using pydantic v1 (no Rust dependencies)
-pydantic[email]==1.10.12
-
-# Authentication and security
+python-dotenv==1.0.1
+pydantic==2.9.2
 python-jose[cryptography]==3.3.0
 passlib[bcrypt]==1.7.4
-
-# File uploads
-python-multipart==0.0.6
-
-# Additional dependencies for production
-gunicorn==21.2.0
+python-multipart==0.0.9
+gunicorn==22.0.0
